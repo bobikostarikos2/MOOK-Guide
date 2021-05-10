@@ -1,78 +1,107 @@
 .navigation{
+    width: 30%;
+    background-color: rgb(52, 56, 60);
+    min-height: 500px;
+    border-radius: 3px;
+    padding: 10px 8px;
+}
+
+.navigation__title-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    min-height: 500px;
-    margin: 20px 15px;
-    border-radius: 5px;
-    background-color: rgba(20, 14, 41,0.99);
-    padding: 10px 5px;
+    padding-bottom: 15px;
 
-    .nav-title-container{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        padding-bottom: 10px;
-    }
-
-    .nav-title{
+    h2{
         text-transform: uppercase;
-        color: rgb(201, 201, 201);
-        @extend %poppins-medium;
-    }
-
-    .line{
-        height: 1px;
-        width: 90%;
-        background-color: rgb(201, 201, 201);
+        font-size: 25px;
+        letter-spacing: 7.5px;
+        text-transform: uppercase;
+        color: rgb(166, 178, 182);
+        @extend %roboto-bold;
     }
 }
 
-.navigation-container{
-    display: flex; 
+.navigation__lines-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+
+    .line-long{
+        width: 90%;
+        height: 3px;
+        background-color: rgb(166, 178, 182);
+        margin-bottom: 10px;
+    }
+
+    .line-short{
+        width: 85%;
+        height: 3px;
+        background-color: rgb(166, 178, 182);
+    }
+}
+
+.navigation__links-container{
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    padding-top: 20px;
 
-    a{
-        text-decoration: none;
-        color: #fff;
-        cursor: pointer;
-        @extend %poppins-light;
-
-        &:hover{
-            color: rgb(118, 105, 129);
-            transition: color 0.2s;
-        }
-    }
-
-    .paragraph-lvl-1{
+    .nesting_1{
         padding-left: 15px;
         padding-bottom: 15px;
+        
+        span{
+            display: flex;
+            flex-direction: row;
+            color: rgb(196, 209, 224);
+            fill:rgb(196, 209, 224);
+            font-size: 24px;
+            cursor: pointer;
+            @extend %roboto-medium;
 
-        a{
-            font-size: 20px;
+            &:hover{
+                color: rgb(150, 150, 150);
+                transition: color 0.3s, fill 0.3s;
+                fill:rgb(150, 150, 150);
+            }
+        }
+
+        .link{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10px;
+            align-items: center;
+            fill: white;
+        }
+
+        .arrow-container{
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+        }
+
+        svg{
+            transition: transform 0.3s;
         }
     }
 
-    .paragraph-lvl-2{
-        padding: 4px 0px 4px 25px;
+    .nesting_2{
+        padding-left: 20px;
 
         a{
-            font-size: 16px;
+            color: rgb(196, 209, 224);
+            font-size: 18px;
+            @extend %roboto-medium;
+
+            &:hover{
+                color: rgb(150, 150, 150);
+                transition: color 0.3s;
+            }
         }
-    }
 
-    .level_1{
-        padding-left: 15px; 
-        cursor: pointer;
-    }
-
-    .level_2{
-        padding-left: 25px; 
-        cursor: pointer;
+        .link{
+            padding-bottom: 5px;
+        }
     }
 }

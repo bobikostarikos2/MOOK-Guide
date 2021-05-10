@@ -1,86 +1,60 @@
 .contents{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+    width: 70%;
+}
+
+.title-module{
+    h2{
+        font-size: 32px;
+        @extend %roboto-medium;
+        color: rgb(214, 214, 214);
+        padding-bottom: 30px;
+    }
+
+    h3{
+        font-size: 20px;
+        @extend %roboto-medium;
+        color: rgb(214, 214, 214);
+        padding-bottom: 15px;
+    }
+}
+
+.text-module{
+    padding-bottom: 20px;
+    
+    p{
+        font-size: 14px;
+        @extend %roboto-regular;
+        color: rgb(214, 214, 214);
+        text-align: justify;
+        padding-bottom: 15px;
+    }
+}
+
+.image-module{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
-    width: 85%;
-    min-height: 500px;
-    margin: 20px 15px;
-    border-radius: 5px;
-    background-color: rgba(20, 14, 41,0.99);
-    padding: 20px 30px;
-
-    .contnent-title-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-bottom: 10px;
-        width: 100%;
-    }
-
-    .content-title{
-        text-transform: uppercase;
-        font-size: 24px;
-        color: rgb(201, 201, 201);
-        @extend %poppins-medium; 
-    }  
-
-    .text-container{
-      padding-bottom: 5px;
-    }
-
-    .text{
-        text-indent: 15px;
-        padding-bottom: 10px;
-        font-size: 16px;
-        color: rgb(201, 201, 201);
-        @extend %poppins-light; 
-    }
-
-    .image-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 500px;
-        height: 300px;
-    }
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
 
     img{
         height: auto;
-        max-width: 100%;
-        padding-bottom: 5px;
-    }
-
-    .img-text{
-        font-size: 12px;
-        color: rgb(201, 201, 201);
-        @extend %poppins-light; 
-    }
-
-    .list-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
         width: 100%;
-        color: rgb(201, 201, 201);
-        padding-bottom: 20px;
+        max-width: 500px;
+        margin-bottom: 10px;
+    }
 
-        .list{
-            padding-left: 20px;
-        }
-
-        .list-item{
-            padding: 5px 0px;
-        }
-
-
-        .list-text{
-            font-size: 16px;
-            @extend %poppins-light;
-
-            &::after{
-                content: ";";
-            }
-        }
+    p{
+        font-size: 14px;
+        @extend %roboto-regular;
+        color: rgb(214, 214, 214);
+        text-align: justify;
+        padding-bottom: 15px;
     }
 }

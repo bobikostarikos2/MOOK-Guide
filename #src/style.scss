@@ -3,29 +3,46 @@
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.transform-x{
+    transform: rotate(180deg);
 }
 
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(https://www.allsides.com/sites/default/files/10View-illo-superJumbo.jpg);
-    background-size: 100% 100%;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-%poppins-medium{
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+%roboto-medium{
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-%poppins-light{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+%roboto-regular{
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+%roboto-bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+%rajdhani-bold{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-display: swap;
 }
 
 @import 'modules/header/_header';

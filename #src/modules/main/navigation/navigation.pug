@@ -1,35 +1,67 @@
 section.navigation 
-    .nav-title-container
-        h2.nav-title Навигация
-    hr.line 
-    .navigation-container 
-        .paragraph-lvl-1
-            a(href="level-1.html") Level 1
-            .paragraph-lvl-2
-                a(href="#") Level 1.1
-            .paragraph-lvl-2
-                a(href="#") Level 1.2
-            .paragraph-lvl-2
-                a(href="#") Level 1.3
-            .paragraph-lvl-2
-                a(href="#") Level 1.4
-        .paragraph-lvl-1
-            a(href="#") Level 2
-            .paragraph-lvl-2
-                a(href="#") Level 2.1
-            .paragraph-lvl-2
-                a(href="#") Level 2.2
-            .paragraph-lvl-2
-                a(href="#") Level 2.3
-            .paragraph-lvl-2
-                a(href="#") Level 2.4
-        .paragraph-lvl-1
-            a(href="#") Level 3
-            .paragraph-lvl-2
-                a(href="#") Level 3.1
-            .paragraph-lvl-2
-                a(href="#") Level 3.2
-            .paragraph-lvl-2
-                a(href="#") Level 3.3
-            .paragraph-lvl-2
-                a(href="#") Level 3.4
+    .navigation__title-container
+        h2 Навигация
+    .navigation__lines-container 
+        hr.line-long
+        hr.line-short
+    .navigation__links-container
+        .nesting_1(x-data="{isOpen : false}")
+            .link
+                span(@click="isOpen = !isOpen"  title="Открыть/закрыть раздел") Введение
+                    .arrow-container
+                        svg(x-bind:class="{'transform-x' : isOpen}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 532.169 532.169" style="enable-background:new 0 0 532.169 532.169;" xml:space="preserve")
+                            path(id="XMLID_106_" d="M461.539,157.069L266.077,281.954L70.617,157.069c-21.359-13.641-49.75-7.393-63.391,13.966 c-13.647,21.365-7.393,49.743,13.966,63.392l220.179,140.674c7.534,4.816,16.126,7.222,24.712,7.222 c8.587,0,17.179-2.405,24.713-7.222l220.18-140.674c21.358-13.648,27.619-42.033,13.965-63.392 C511.282,149.67,482.903,143.434,461.539,157.069z")
+            .nesting_2(x-show="isOpen")
+                .link
+                    a(href="index.html#Vvedenie-1") Что такое Lorem Ipsum? 
+                .link
+                    a(href="index.html#Vvedenie-2") Почему он используется?
+                .link
+                    a(href="index.html#Vvedenie-3") Откуда он появился? 
+                .link
+                    a(href="index.html#Vvedenie-4") Где его взять?
+        .nesting_1(x-data="{isOpen : false}")
+            .link
+                span(@click="isOpen = !isOpen"  title="Открыть/закрыть раздел") Раздел 2 
+                    .arrow-container
+                        svg(x-bind:class="{'transform-x' : isOpen}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 532.169 532.169" style="enable-background:new 0 0 532.169 532.169;" xml:space="preserve")
+                            path(id="XMLID_106_" d="M461.539,157.069L266.077,281.954L70.617,157.069c-21.359-13.641-49.75-7.393-63.391,13.966 c-13.647,21.365-7.393,49.743,13.966,63.392l220.179,140.674c7.534,4.816,16.126,7.222,24.712,7.222 c8.587,0,17.179-2.405,24.713-7.222l220.18-140.674c21.358-13.648,27.619-42.033,13.965-63.392 C511.282,149.67,482.903,143.434,461.539,157.069z")
+            .nesting_2(x-show="isOpen")
+                .link
+                    a(href="#") Ссылка 2.1 
+                .link
+                    a(href="#") Ссылка 2.2 
+                .link
+                    a(href="#") Ссылка 2.3 
+                .link
+                    a(href="#") Ссылка 2.4 
+        .nesting_1(x-data="{isOpen : false}")
+            .link
+                span(@click="isOpen = !isOpen" title="Открыть/закрыть раздел") Раздел 3 
+                    .arrow-container
+                        svg(x-bind:class="{'transform-x' : isOpen}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 532.169 532.169" style="enable-background:new 0 0 532.169 532.169;" xml:space="preserve")
+                            path(id="XMLID_106_" d="M461.539,157.069L266.077,281.954L70.617,157.069c-21.359-13.641-49.75-7.393-63.391,13.966 c-13.647,21.365-7.393,49.743,13.966,63.392l220.179,140.674c7.534,4.816,16.126,7.222,24.712,7.222 c8.587,0,17.179-2.405,24.713-7.222l220.18-140.674c21.358-13.648,27.619-42.033,13.965-63.392 C511.282,149.67,482.903,143.434,461.539,157.069z")
+            .nesting_2(x-show="isOpen")
+                .link
+                    a(href="#") Ссылка 3.1 
+                .link
+                    a(href="#") Ссылка 3.2 
+                .link
+                    a(href="#") Ссылка 3.3 
+                .link
+                    a(href="#") Ссылка 3.4 
+        .nesting_1(x-data="{isOpen : false}")
+            .link
+                span(@click="isOpen = !isOpen" title="Открыть/закрыть раздел") Раздел 4 
+                    .arrow-container
+                        svg(x-bind:class="{'transform-x' : isOpen}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 532.169 532.169" style="enable-background:new 0 0 532.169 532.169;" xml:space="preserve")
+                            path(id="XMLID_106_" d="M461.539,157.069L266.077,281.954L70.617,157.069c-21.359-13.641-49.75-7.393-63.391,13.966 c-13.647,21.365-7.393,49.743,13.966,63.392l220.179,140.674c7.534,4.816,16.126,7.222,24.712,7.222 c8.587,0,17.179-2.405,24.713-7.222l220.18-140.674c21.358-13.648,27.619-42.033,13.965-63.392 C511.282,149.67,482.903,143.434,461.539,157.069z")
+            .nesting_2(x-show="isOpen")
+                .link
+                    a(href="#") Ссылка 4.1 
+                .link
+                    a(href="#") Ссылка 4.2 
+                .link
+                    a(href="#") Ссылка 4.3 
+                .link
+                    a(href="#") Ссылка 4.4 
