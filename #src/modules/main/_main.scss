@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 470px;
+    max-width: 1550px;
+}

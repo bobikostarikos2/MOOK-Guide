@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://www.allsides.com/sites/default/files/10View-illo-superJumbo.jpg);
+    background-size: 100% 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+%poppins-medium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+%poppins-light{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@import 'modules/header/_header';
+@import 'modules/footer/_footer';
+@import 'modules/main/_main';
+@import 'modules/main/content/_content';
+@import 'modules/main/navigation/_navigation';

@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1550px;
+    height: 80px;
+    background-color: rgba(3, 12, 9,0.95);
+
+    .name-container {
+
+    }
+
+    .name{
+        font-size: 30px;
+        color: rgb(201, 201, 201);
+        @extend %poppins-medium;
+    }
+
+    .home-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 50px;
+        width: 100%;
+    }
+
+    .home{
+        font-size: 20px;
+        color: rgb(201, 201, 201);
+        @extend %poppins-medium; 
+        text-decoration: none;
+
+        &:hover{
+            color: rgb(118, 105, 129);
+            transition: color 0.2s;
+        }
+    }
+}
